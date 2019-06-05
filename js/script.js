@@ -17,8 +17,7 @@ if (randomNumber == '1') {
 printMessage('Mój ruch: ' + computerMove);
 
 var playerInput, playerMove;
-playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
-console.log('Wpisana odpowiedź to: ' + playerInput);
+playerMove = argButtonName;
 if (playerInput == '1') {
   playerMove = 'kamień';
 } else if (playerInput == '2') {
@@ -82,7 +81,19 @@ displayResult(playerMove, computerMove);
 
 /*buttons*/
 
-ar argButtonName, buttonRock;
+var argButtonName, buttonTest;
+
+/**
+ * Describe this function...
+ */
+function buttonClicked(argButtonName) {
+  clearMessages();
+  console.log(argButtonName + ' został kliknięty');
+}
+buttonTest = document.getElementById('button-test');
+buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
+
+var argButtonName, buttonRock;
 
 /**
  * Describe this function...
