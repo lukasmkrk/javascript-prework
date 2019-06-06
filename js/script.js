@@ -1,9 +1,9 @@
-var playerMove;
-playerMove = 'papier';
+
+let playerMove = 'papier';
 printMessage('Zagrałem ' + playerMove + '! Jeśli Twój ruch to kamien, to wygrywasz!');
 
-var computerMove, randomNumber;
-randomNumber = Math.floor(Math.random() * 3 + 1);
+let computerMove;
+let randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
 if (randomNumber == '1') {
   computerMove = 'kamień';
@@ -16,7 +16,7 @@ if (randomNumber == '1') {
 }
 printMessage('Mój ruch: ' + computerMove);
 
-var playerInput, playerMove;
+let playerInput, argButtonName, buttonTest;
 playerMove = argButtonName;
 if (playerInput == '1') {
   playerMove = 'kamień';
@@ -30,7 +30,7 @@ if (playerInput == '1') {
 printMessage('Twój ruch: ' + playerMove);
 
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+let argComputerMove, argMoveId, argPlayerMove;
 
 /**
  * Describe this function...
@@ -81,7 +81,7 @@ displayResult(playerMove, computerMove);
 
 /*buttons*/
 
-var argButtonName, buttonTest;
+
 
 /**
  * Describe this function...
@@ -90,10 +90,9 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 }
-buttonTest = document.getElementById('button-test');
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 
-var argButtonName, buttonRock;
+
+let buttonRock;
 
 /**
  * Describe this function...
@@ -106,7 +105,7 @@ buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 
 
-var argButtonName, buttonPaper;
+let buttonPaper;
 
 /**
  * Describe this function...
@@ -119,7 +118,7 @@ buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 
 
-var argButtonName, buttonScissors;
+let buttonScissors;
 
 /**
  * Describe this function...
